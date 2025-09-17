@@ -1,0 +1,2 @@
+it is about a safe folder, unlike others it stores only text which is the input text provided by the user.
+we can also see the previous history of entered text.
