@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Safe Folder - Home</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .home-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      width: 400px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      resize: none;
+    }
+
+    textarea::placeholder {
+      color: #ddd;
+    }
+
+    .upload-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 18px;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 65, 108, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .upload-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 65, 108, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <h2>Upload Your Text Safely</h2>
+    <form action="store.php" method="POST">
+      <textarea name="userText" placeholder="Type your secure message here..." required></textarea>
+      <button class="upload-btn" type="submit">Upload</button>
+    </form>
+    <!-- Link to history page -->
+    <div style="margin-top: 20px;">
+  <a href="history.php" style="color: #ffd1dc; text-decoration: underline; font-size: 16px;">View Uploaded Text History</a>
+</div>
+  </div>
+</body>
+</html>
